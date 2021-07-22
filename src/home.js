@@ -12,7 +12,7 @@ function Home(props) {
         //getting the details of user by their id
         let users = await GetuserbyID(props.match.params.id);
         let userEmail=users.data.email;
-        //getting the data of applied jobs by user email
+        //getting the data of survey by user email
         let surveybyid=await GetsurveybyEmail(userEmail)
         setuserData(surveybyid.data)
         console.log(surveybyid.data)
