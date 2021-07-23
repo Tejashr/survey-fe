@@ -29,14 +29,14 @@ function Survey(props){
                         <div class="card-body">
                             <form onSubmit={async (e) => {
                                 e.preventDefault();
-                               await PostSurvey(userData)
+                               await PostSurvey(userData)//posting the survey details
                                 setEmail("");
                                 setname("");
                                 setPhone("");
                                 setgender("");
                                 setdob("");
                                 setplace("");
-                                history.push(`/home/${props.match.params.id}`);
+                                history.push(`/home/${props.match.params.id}`);//after posting the survey details redirecting to the home page where we display all suurvey details
                             }}>
                             <div class="input-group form-group mt-1">
                                     <div class="input-group-prepend">

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { GetsurveybyEmail, GetuserbyID } from './api';
@@ -34,6 +33,7 @@ function Home(props) {
                         <th scope="col">Place</th>
                     </tr>
                 </thead>
+                {/* displaying all the survey of user email */}
                 <tbody>
                 {
                         userData.map((use, index) => {
